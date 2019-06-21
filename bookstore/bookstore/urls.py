@@ -22,5 +22,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('main/', include('main.urls', namespace='main')),
     path('about/', include('about.urls', namespace='about')),
+    path('book1/', include('book1.urls', namespace='book1')),
     re_path('.*', views.main),
 ]
