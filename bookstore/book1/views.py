@@ -6,5 +6,5 @@ def book1(request):
     """
     render the book1 page
     """
-    return render(request, 'book1/book.html')
+    return render(request, 'book1/book1.html')
 # Create your views here.

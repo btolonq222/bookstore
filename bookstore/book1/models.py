@@ -13,3 +13,6 @@ class Book(models.Model):
 class Review(models.Model):
     article = models.ForeignKey(Book,on_delete=CASCADE)
     content = models.IntegerField()
+    
+    def __str__(self):
+        return self.article.title + '-' + str(self.id)
